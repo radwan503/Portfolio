@@ -5,7 +5,7 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Header from "@/components/_common/Header";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://radwananik.com"),
+  metadataBase: new URL("https://radwanahmed.vercel.app/"),
   title: {
     default: "Radwan Ahmed || Software Engineer (Front-End)",
     template: "%s | Radwan Ahmed",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Hi, I am Radwan Ahmed — a Software Engineer (Front-End) passionate about creating seamless digital experiences. I specialize in React.js, Next.js, TypeScript, and modern UI development, delivering responsive, accessible, and high-performing web applications.",
   keywords:
     "Radwan Ahmed, Radwan Anik, radwan503, front-end developer, software engineer, web developer, React.js developer, Next.js portfolio, TypeScript developer, JavaScript developer, UI engineer, responsive web design, Bangladesh developer, front end engineer, HTML, CSS, Tailwind, Ant Design, UI/UX, portfolio developer",
-  authors: [{ name: "Radwan Ahmed", url: "https://radwananik.com" }],
+  authors: [{ name: "Radwan Ahmed", url: "https://radwanahmed.vercel.app/" }],
   creator: "Radwan Ahmed",
   publisher: "Radwan Ahmed",
 
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     title: "Radwan Ahmed | Portfolio | Software Engineer (Front-End)",
     description:
       "Explore the portfolio of Radwan Ahmed — a Front-End Software Engineer skilled in React.js, Next.js, and modern UI frameworks. Transforming ideas into interactive digital experiences.",
-    url: "https://radwananik.com",
+    url: "https://radwanahmed.vercel.app/",
     siteName: "Radwan Ahmed | Portfolio",
     type: "website",
     locale: "en_US",
     images: [
       {
-        url: "https://radwananik.com/og-image.jpg", // replace with your actual preview image
+        url: "https://radwanahmed.vercel.app//og-image.jpg", // replace with your actual preview image
         alt: "Radwan Ahmed Portfolio Preview",
         width: 1200,
         height: 630,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Radwan Ahmed | Software Engineer (Front-End)",
     description:
       "Explore the work and projects of Radwan Ahmed — a Front-End Software Engineer with expertise in React, Next.js, and modern web technologies.",
-    images: ["https://radwananik.com/og-image.jpg"],
+    images: ["https://radwanahmed.vercel.app//og-image.jpg"],
   },
 
   icons: {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://radwananik.com",
+    canonical: "https://radwanahmed.vercel.app/",
   },
 
   viewport: {

@@ -28,28 +28,11 @@ const PREVIEW_ITEMS: Item[] = [{ label: "Blog", href: "/blog" }];
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = React.useState(false);
-  const [dark, setDark] = React.useState(false);
   const [time, setTime] = React.useState<string>("");
 
   const items = pathname?.startsWith("/preview") ? PREVIEW_ITEMS : MAIN_ITEMS;
 
   const isActive = (href: string) => pathname === href;
-
-  // Theme
-  useEffect(() => {
-    const stored = localStorage.getItem("theme");
-    const preferDark =
-      stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setDark(preferDark);
-    document.documentElement.classList.toggle("dark", preferDark);
-  }, []);
-  // const toggleTheme = () => {
-  //   const next = !dark;
-  //   setDark(next);
-  //   document.documentElement.classList.toggle("dark", next);
-  //   localStorage.setItem("theme", next ? "dark" : "light");
-  // };
-  console.log(dark)
 
   // Dhaka time
   useEffect(() => {
@@ -136,7 +119,7 @@ export default function Header() {
                 {items.map((it,index) => (
                   <li key={it.label}>
                     <NavLink href={it.href} active={isActive(it.href)} accent={ACCENT}>
-                     <span>{"//"} </span>{it.label} <sup className=" text-[#ff8a5b]">0{index+1}</sup>
+                     <span className=" text-[13px]">{"//"} {it.label}</span> <sup className="text-[#ff8a5b]">0{index+1}</sup>
                     </NavLink>
                   </li>
                 ))}

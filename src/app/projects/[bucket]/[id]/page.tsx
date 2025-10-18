@@ -2,7 +2,7 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
-import { useParams, useRouter, useSearchParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import {
   ArrowLeft,
   ExternalLink,
@@ -41,13 +41,11 @@ const ACCENT = "#ca3500";
 export default function PreviewPage() {
   const router = useRouter();
   const params = useParams<{ bucket: string; id: string }>();
-  const search = useSearchParams();
 
 
   const [project, setProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState(true);
-  console.log(params)
-  console.log(search)
+
 
   useEffect(() => {
     let mounted = true;
