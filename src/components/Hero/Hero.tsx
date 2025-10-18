@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, MapPin, FileText, Download } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import Social from "../_common/Social";
 
 type Mouse = { x: number; y: number };

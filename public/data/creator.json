@@ -3,22 +3,13 @@
     {
       "id": "slass-001",
       "title": "Slass UI",
-      "blurb": "Frosted panels, gradient borders, and accessible focus states.",
+      "blurb": "Modern, reusable React + Tailwind CSS components. Free, open-source, responsive UI blocks to build dashboards, landing pages, and apps faster.",
       "cover": "/products/slassui.png",
       "category": "Glass UI",
       "tags": ["Tailwind", "Blur", "Tokens"],
       "demo": "https://slass-ui.vercel.app/",
       "source": "https://github.com/you/glass-ui"
-    },
-    {
-      "id": "dash-001",
-      "title": "Finance Dashboard Concept",
-      "blurb": "Cards, charts, and themeable components.",
-      "cover": "/images/creator/finance-dash.jpg",
-      "category": "Dashboard",
-      "tags": ["Next.js", "Charts", "SSR"],
-      "demo": "https://your-demo-link",
-      "source": "https://github.com/you/finance-dash"
     }
+
   ]
 }

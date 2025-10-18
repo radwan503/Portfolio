@@ -31,22 +31,6 @@ function useIntersectionOnce<T extends HTMLElement>(opts?: IntersectionObserverI
   return { ref, seen };
 }
 
-function useCountUp(target: number, run: boolean, ms = 900) {
-  const [n, setN] = useState(0);
-  useEffect(() => {
-    if (!run) return;
-    const t0 = performance.now();
-    let raf = 0;
-    const step = (t: number) => {
-      const p = Math.min(1, (t - t0) / ms);
-      setN(Math.round(target * (1 - Math.pow(1 - p, 3))));
-      if (p < 1) raf = requestAnimationFrame(step);
-    };
-    raf = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(raf);
-  }, [run, target, ms]);
-  return n;
-}
 
 /* --- main --- */
 export default function Skill() {
@@ -187,25 +171,14 @@ function SkillGrid({ items }: { items: SkillItem[] }) {
 }
 
 /* --- card --- */
-function SkillCard({ skill, index }: { skill: SkillItem; index: number }) {
-  const { ref, seen } = useIntersectionOnce<HTMLDivElement>({ threshold: 0.2 });
-  const animated = useCountUp(skill.percent ?? 0, seen, 700 + index * 40);
-
-  const pct = Math.max(0, Math.min(100, animated));
-  const deg = (pct / 100) * 360;
-  const learning = (skill.percent ?? 0) === 0;
-
+function SkillCard({ skill }: { skill: SkillItem; index: number }) {
+  const { ref } = useIntersectionOnce<HTMLDivElement>({ threshold: 0.2 });
   return (
     <div
       ref={ref}
       className="group overflow-hidden rounded border border-white/10 bg-white/5 p-3 ring-1 ring-white/10 transition-all hover:-translate-y-0.5 hover:bg-white/[0.07] card-overlay "
       //style={{ boxShadow: "0 10px 30px -18px rgba(0,0,0,.6)" }}
     >
-      {/* <div
-        className="pointer-events-none  absolute -inset-10 -z-10 opacity-30 blur-2xl"
-        style={{ background: `radial-gradient(60% 60% at 50% 50%, ${ACCENT}44, transparent)` }}
-      /> */}
-
       <div className="flex items-center justify-center gap-2 h-30 ">
         {skill.image ? (
           <div className="relative h-6 w-6 shrink-0 overflow-hidden rounded">
@@ -221,55 +194,6 @@ function SkillCard({ skill, index }: { skill: SkillItem; index: number }) {
         )}
         <div className="truncate text-sm font-semibold">{skill.name}</div>
       </div>
-
-      {/* <div className="mt-3 flex items-end justify-between">
-        <div className="text-[11px] uppercase tracking-wide text-slate-400">
-          {learning ? "Exploring" : "Proficiency"}
-        </div>
-        <div className="relative h-12 w-12">
-          <div
-            className="absolute inset-0 rounded-full"
-            style={{
-              background:
-                "conic-gradient(from 0deg, rgba(255,255,255,.08) 0deg, rgba(255,255,255,.08) 360deg)",
-              WebkitMask: "radial-gradient(farthest-side, #0000 62%, #000 63%)",
-              mask: "radial-gradient(farthest-side, #0000 62%, #000 63%)",
-            }}
-          />
-          <div
-            className="absolute inset-0 rounded-full"
-            style={{
-              background: `conic-gradient(${ACCENT} ${deg}deg, transparent ${deg}deg)`,
-              WebkitMask: "radial-gradient(farthest-side, #0000 62%, #000 63%)",
-              mask: "radial-gradient(farthest-side, #0000 62%, #000 63%)",
-              filter: `drop-shadow(0 0 12px ${ACCENT}55)`,
-            }}
-          />
-          <div className="absolute inset-[22%] grid place-content-center rounded-full bg-white/5 text-[11px] font-bold">
-            {learning ? "—" : `${pct}%`}
-          </div>
-        </div>
-      </div> */}
-
-      {/* <div className="mt-3 flex items-center gap-2">
-        {learning ? (
-          <span className="rounded-full bg-white/5 px-2 py-0.5 text-[10px] text-slate-300 ring-1 ring-white/10">
-            Learning
-          </span>
-        ) : (
-          <>
-            <span className="rounded-full bg-white/5 px-2 py-0.5 text-[10px] text-slate-300 ring-1 ring-white/10">
-              {pct >= 80 ? "Advanced" : pct >= 60 ? "Intermediate" : "Working"}
-            </span>
-            {pct >= 80 && (
-              <span
-                className="h-1.5 w-1.5 rounded-full animate-[pulse-glow_3s_ease-in-out_infinite]"
-                style={{ background: ACCENT }}
-              />
-            )}
-          </>
-        )}
-      </div> */}
     </div>
   );
 }

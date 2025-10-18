@@ -1,11 +1,9 @@
-// app/components/Footer.tsx
 "use client";
 
 import React from "react";
 import { Github, Linkedin, Mail, Twitter, Heart, ArrowUpRight, Code2 } from "lucide-react";
 import Link from "next/link";
 
-const ACCENT = "#ca3500";
 
 const LINKS = [
   { label: "Home", href: "/" },

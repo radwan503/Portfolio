@@ -1,12 +1,9 @@
-// app/components/_common/CreatorSection.tsx
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
-import { Sparkles, ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { useEffect } from "react";
 
-const ACCENT = "#ca3500";
 
 export type CreatorItem = {
   id: string;

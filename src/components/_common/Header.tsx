@@ -49,7 +49,7 @@ export default function Header() {
   //   document.documentElement.classList.toggle("dark", next);
   //   localStorage.setItem("theme", next ? "dark" : "light");
   // };
-  // console.log(toggleTheme)
+  console.log(dark)
 
   // Dhaka time
   useEffect(() => {
@@ -136,7 +136,7 @@ export default function Header() {
                 {items.map((it,index) => (
                   <li key={it.label}>
                     <NavLink href={it.href} active={isActive(it.href)} accent={ACCENT}>
-                     // {it.label} <sup className=" text-[#ff8a5b]">0{index+1}</sup>
+                     <span>{"//"} </span>{it.label} <sup className=" text-[#ff8a5b]">0{index+1}</sup>
                     </NavLink>
                   </li>
                 ))}

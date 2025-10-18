@@ -9,7 +9,6 @@ import {
   Sparkles,
   Code2,
   Calendar,
-  Building2,
   Layers3,
   Share2,
   ChevronRight,
@@ -43,7 +42,7 @@ export default function PreviewPage() {
   const router = useRouter();
   const params = useParams<{ bucket: string; id: string }>();
   const search = useSearchParams();
-  const id = params.id;
+
 
   const [project, setProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState(true);
