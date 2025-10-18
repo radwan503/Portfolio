@@ -58,17 +58,17 @@ export default function Header() {
       {/* Info strip (contentful, brand color) */}
       <div className=" bg-white/80 dark:bg-slate-950/70" >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-1.5 flex items-center gap-3 text-xs">
-          <span className="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 font-semibold"
+          <span className="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 font-oswald font-semibold"
                 style={{ color: ACCENT, background: `${ACCENT}14`, border: `1px solid ${ACCENT}33` }}>
             <span className="h-1.5 w-1.5 rounded-full animate-pulse" style={{ background: ACCENT }} />
             Open for freelance
           </span>
-          <span className="hidden md:inline text-slate-600 dark:text-slate-300">
+          <span className="hidden md:inline text-slate-600 dark:text-slate-300 font-oswald">
             Senior Software Engineer — React • Next.js • TypeScript • UI Systems
           </span>
 
           <div className="ml-auto flex items-center gap-3 text-slate-600 dark:text-slate-300">
-            <span className="hidden sm:inline-flex items-center gap-1">
+            <span className="hidden sm:inline-flex items-center gap-1 font-oswald">
               <Globe2 className="h-3.5 w-3.5 opacity-70" />
               Dhaka • {time || "—:—"}
             </span>
@@ -104,10 +104,10 @@ export default function Header() {
                 R
               </span>
               <div className="leading-tight">
-                <div className="font-semibold text-slate-900 dark:text-white">
+                <div className="font-semibold text-slate-900 dark:text-white font-oswald">
                   Radwan <span className="opacity-60">Ahmed</span>
                 </div>
-                <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                <div className="text-[11px] text-slate-500 dark:text-slate-400 font-oswald">
                   Frontend • UI Engineering
                 </div>
               </div>
@@ -119,14 +119,14 @@ export default function Header() {
                 {items.map((it,index) => (
                   <li key={it.label}>
                     <NavLink href={it.href} active={isActive(it.href)} accent={ACCENT}>
-                     <span className=" text-[13px]">{"//"} {it.label}</span> <sup className="text-[#ff8a5b]">0{index+1}</sup>
+                     <span className=" text-[13px] font-oswald">{"//"} {it.label}</span> <sup className="text-[#ff8a5b]">0{index+1}</sup>
                     </NavLink>
                   </li>
                 ))}
               </ul>
 
               {/* Socials */}
-              <div className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
+              <div className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300 font-oswald">
                 <IconLink href="https://github.com/radwan503" label="GitHub" accent={ACCENT}>
                   <Github className="h-5 w-5" />
                 </IconLink>
@@ -143,7 +143,7 @@ export default function Header() {
                 <a
                   href="tel:01873843384"
                   title="01873843384"
-                  className="group relative inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition will-change-transform hover:-translate-y-0.5"
+                  className="font-oswald group relative inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition will-change-transform hover:-translate-y-0.5"
                   style={{
                     background: `linear-gradient(180deg,#ff8a5b 0%, ${ACCENT} 100%)`,
                     boxShadow: `0 10px 24px -10px ${ACCENT}a0`,
@@ -158,13 +158,13 @@ export default function Header() {
 
                 <a
                   href="/radwanahmed-resume.pdf"
-                  className="group  relative inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-[#ff8a5b] transition will-change-transform hover:-translate-y-0.5"
+                  className="group font-oswald relative inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-[#ff8a5b] transition will-change-transform hover:-translate-y-0.5"
                   style={{
                     background: `#030712`,
                     boxShadow: `0 10px 24px -10px ${ACCENT}a0`,
                   }}
                 >
-                  <span className="inline-flex items-center gap-1 text-[#ff8a5b] ">
+                  <span className="inline-flex items-center gap-1 text-[#ff8a5b] font-oswald">
                     <Download className="h-4 w-4 opacity-100" />
                     CV
                   </span>
@@ -187,10 +187,10 @@ export default function Header() {
         {/* Mobile sheet */}
         <div className={`lg:hidden transition-[max-height] duration-300 ease-out overflow-hidden ${open ? "max-h-[70vh]" : "max-h-0"}`}>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-4">
-            <ul className="space-y-1">
+            <ul className="space-y-1 font-oswald">
               {items.map((it) => (
-                <li key={it.label}>
-                  <MobileLink href={it.href} active={isActive(it.href)} accent={ACCENT}>
+                <li className="font-oswald" key={it.label}>
+                  <MobileLink  href={it.href} active={isActive(it.href)} accent={ACCENT}>
                     {it.label}
                   </MobileLink>
                 </li>
@@ -200,14 +200,14 @@ export default function Header() {
             {/* Mobile extras */}
             <div className="mt-4 grid grid-cols-1 gap-3 border-t border-slate-900/10 pt-4 dark:border-white/10">
               <div className="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
-                <span className="h-2 w-2 rounded-full animate-pulse" style={{ background: ACCENT }} />
-                <span>Open to roles & projects • Dhaka • {time || "—:—"}</span>
+                <span className="h-2 w-2 rounded-full animate-pulse font-oswald" style={{ background: ACCENT }} />
+                <span className="font-oswald">Open to roles & projects • Dhaka • {time || "—:—"}</span>
               </div>
 
               <div className="flex gap-2">
                 <a
                   href="tel:01873843384"
-                  className="flex-1 inline-flex items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold text-white"
+                  className="flex-1 font-oswald inline-flex items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold text-white"
                   style={{ background: `linear-gradient(180deg,#ff8a5b 0%, ${ACCENT} 100%)` }}
                 >
                   <Phone className="h-4 w-4" />
@@ -215,7 +215,7 @@ export default function Header() {
                 </a>
                 <a
                   href="/radwanahmed-resume.pdf"
-                  className="flex-1 inline-flex items-center justify-center rounded-full px-4 py-2.5 text-sm font-medium text-slate-800 hover:bg-slate-900/5 dark:text-slate-100 dark:hover:bg-white/5"
+                  className="flex-1 font-oswald inline-flex items-center justify-center rounded-full px-4 py-2.5 text-sm font-medium text-slate-800 hover:bg-slate-900/5 dark:text-slate-100 dark:hover:bg-white/5"
                   style={{ border: "1px solid rgba(255,255,255,.12)" }}
                 >
                   <Download className="h-4 w-4 mr-1.5" />
@@ -223,7 +223,7 @@ export default function Header() {
                 </a>
               </div>
 
-              <div className="flex items-center justify-center gap-3 text-slate-600 dark:text-slate-300">
+              <div className="flex font-oswald items-center justify-center gap-3 text-slate-600 dark:text-slate-300">
                 <IconLink href="https://github.com/" label="GitHub" className="flex-1 justify-center" accent={ACCENT}>
                   <Github className="h-5 w-5" />
                 </IconLink>

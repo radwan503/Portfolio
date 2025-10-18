@@ -13,7 +13,7 @@ const config: Config = {
         secondary: '#D02919',
       },
       fontFamily:{
-        sans: ['Oswald', 'sans-serif'],
+        oswald: ['Oswald', 'sans-serif'],
       }
     },
   },
