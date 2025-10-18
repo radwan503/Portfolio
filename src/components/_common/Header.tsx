@@ -29,6 +29,7 @@ export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = React.useState(false);
   const [time, setTime] = React.useState<string>("");
+  const [scrolled, setScrolled] = React.useState(false);
 
   const items = pathname?.startsWith("/preview") ? PREVIEW_ITEMS : MAIN_ITEMS;
 
@@ -49,14 +50,22 @@ export default function Header() {
 
   useEffect(() => setOpen(false), [pathname]);
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
    const hour = new Date(
     new Date().toLocaleString("en-US", { timeZone: "Asia/Dhaka" })
   ).getHours();
 
+
   return (
     <header className="sticky top-0 z-50">
       {/* Info strip (contentful, brand color) */}
-      <div className=" bg-white/80 dark:bg-slate-950/70" >
+      <div className=" bg-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-1.5 flex items-center gap-3 text-xs">
           <span className="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 font-oswald font-semibold"
                 style={{ color: ACCENT, background: `${ACCENT}14`, border: `1px solid ${ACCENT}33` }}>
@@ -89,9 +98,19 @@ export default function Header() {
       {/* Main nav */}
       <nav
         id="navbarId"
-        className="supports-[backdrop-filter]:bg-white/60 bg-white/80 dark:bg-slate-900/70 dark:supports-[backdrop-filter]:bg-slate-900/50"
+        
         style={{ borderColor: "rgba(255,255,255,.35)" }}
         aria-label="Primary"
+        className={[
+          "transition-all duration-300 will-change-[background-color,backdrop-filter] sticky top-0 z-50",
+          scrolled || open
+            ? [
+                "bg-slate-950 ",
+              ].join(" ")
+            : [
+                "bg-transparent",
+              ].join(" "),
+        ].join(" ")}
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
