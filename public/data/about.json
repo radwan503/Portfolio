@@ -1,0 +1,26 @@
+{
+  "profile": [
+    {
+      "name": "Radwan Ahmed",
+      "aboutTitle": "ABOUT ME",
+      "aboutSubTitle": "Senior Software Engineer (Front-End) || Senior UI Engineer",
+      "aboutDescription": "the things, companies or individuals I have worked for.",
+      "Residence": "Next.js, Tailwind CSS, Ant Design",
+      "birthDay": "Semantic HTML, Clean UI, Accessibility",
+      "age": "React.js,TypeScript,Responsive CSS",
+      "Address": "Dhaka, Bangladesh",
+      "Email": "radwan@example.com",
+      "Phone": "+8801XXXXXXXXX",
+      "Skype": "radwan.ahmed",
+      "Freelance": "Available",
+      "social": "@radwananik"
+    }
+  ],
+  "count": [
+    { "Title": "Total Project", "count": "45+" },
+    { "Title": "Working Company", "count": "4" },
+    { "Title": "Years of Experience", "count": "6+" },
+    { "Title": "Country", "count": "6+" },
+    { "Title": "Products", "count": "2" }
+  ]
+}

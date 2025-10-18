@@ -1,0 +1,182 @@
+{
+  "Web": [
+    {
+      "name": "JAVASCRIPT",
+      "percent": 97,
+      "image": "/icon/js.png"
+    },
+    {
+      "name": "REACT",
+      "percent": 98,
+      "image": "/icon/science.png"
+    },
+    {
+      "name": "NEXT JS",
+      "percent": 97
+    },
+    {
+      "name": "Typescript",
+      "percent": 96
+    },
+    {
+      "name": "HTML5",
+      "percent": 98,
+      "image": "/icon/html-5.png"
+    },
+    {
+      "name": "CSS3",
+      "percent": 97,
+      "image": "/icon/css-3.png"
+    },
+    {
+      "name": "SCSS",
+      "percent": 96
+    },
+    {
+      "name": "TailwindCss",
+      "percent": 98
+    },
+    {
+      "name": "Cypress",
+      "percent": 95
+    },
+    {
+      "name": "Antd",
+      "percent": 97
+    },
+    {
+      "name": "Context API",
+      "percent": 96
+    },
+    {
+      "name": "React Query",
+      "percent": 96
+    },
+    {
+      "name": "Redux",
+      "percent": 60
+    },
+    {
+      "name": "Rest API",
+      "percent": 96
+    },
+    {
+      "name": "JQuery",
+      "percent": 95
+    },
+    {
+      "name": "Bootstrap",
+      "percent": 95
+    },
+    {
+      "name": "Webpack",
+      "percent": 50
+    },
+    {
+      "name": "NODE JS",
+      "percent": 15
+    },
+    {
+      "name": "EXPRESS JS",
+      "percent": 10
+    },
+    {
+      "name": "MONGODB",
+      "percent": 5
+    },
+    {
+      "name": "AGILE",
+      "percent": 95
+    },
+    {
+      "name": "DSA",
+      "percent": 50
+    },
+    {
+      "name": "RWD",
+      "percent": 97
+    },
+    {
+      "name": "MFE",
+      "percent": 96
+    }
+  ],
+  "Programming": [
+    {
+      "name": "JavaScript",
+      "percent": 97
+    },
+    {
+      "name": "Java",
+      "percent": 50
+    },
+    {
+      "name": "C",
+      "percent": 40
+    }
+  ],
+  "LibraryOrFramework": [
+    {
+      "name": "SEO",
+      "percent": 96
+    },
+    {
+      "name": "IONIC",
+      "percent": 95
+    },
+    {
+      "name": "Wordpress",
+      "percent": 96
+    },
+    {
+      "name": "Materialize",
+      "percent": 95
+    },
+    {
+      "name": "Bulma",
+      "percent": 95
+    },
+    {
+      "name": "Semantic",
+      "percent": 95
+    },
+    {
+      "name": "MU UI",
+      "percent": 96
+    },
+    {
+      "name": "UIkit",
+      "percent": 95
+    }
+  ],
+  "Tools": [
+    {
+      "name": "Git",
+      "percent": 90
+    },
+    {
+      "name": "Github",
+      "percent": 90
+    },
+    {
+      "name": "Gitlab",
+      "percent": 90
+    },
+    {
+      "name": "Redmine",
+      "percent": 90
+    },
+    {
+      "name": "Jira",
+      "percent": 50
+    },
+    {
+      "name": "Figma",
+      "percent": 96
+    },
+    {
+      "name": "Adobe Xd",
+      "percent": 95
+    }
+  ]
+}
