@@ -18,7 +18,6 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: url(/public/cursor.svg), default;
 }
 
 /* width */
@@ -556,8 +555,6 @@ body {
   }
 }
 
-#services {
-}
 #services .services-top {
   padding: 70px 0 50px;
 }

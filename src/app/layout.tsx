@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "@/styles/index.scss";
+import "@/styles/index.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Header from "@/components/_common/Header";
 
@@ -58,12 +58,6 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: "https://radwanahmed.vercel.app/",
-  },
-
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
   },
 
   robots: {
