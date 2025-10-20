@@ -70,8 +70,7 @@ export default function Hero() {
             </p>
 
             <p className="mt-4  max-w-2xl text-slate-300/90 text-[15px] leading-relaxed">
-              I craft high-performance, accessible web experiences with modern React, TypeScript, Tailwind and motion.
-              Focused on clean architecture, DX, and beautiful, reliable interfaces that scale.
+              I craft high-performance, accessible web experiences with modern React, TypeScript, Tailwind, and motion. Focused on clean architecture, developer experience, and beautiful, reliable interfaces that scale.
             </p>
 
             {/* Quick stats */}
