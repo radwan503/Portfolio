@@ -1,4 +1,3 @@
-// app/components/Header.tsx
 "use client";
 
 import * as React from "react";
@@ -72,17 +71,17 @@ export default function Header() {
             <span className="h-1.5 w-1.5 rounded-full animate-pulse" style={{ background: ACCENT }} />
             Open for freelance
           </span>
-          <span className="hidden md:inline text-slate-600 dark:text-slate-300 font-oswald">
+          <span className="hidden md:inline text-slate-100 font-oswald">
             Senior Software Engineer — React • Next.js • TypeScript • UI Systems
           </span>
 
-          <div className="ml-auto flex items-center gap-3 text-slate-600 dark:text-slate-300">
+          <div className="ml-auto flex items-center gap-3 text-slate-100 ">
             <span className="hidden sm:inline-flex items-center gap-1 font-oswald">
               <Globe2 className="h-3.5 w-3.5 opacity-70" />
               Dhaka • {time || "—:—"}
             </span>
             <button
-              className="inline-flex items-center justify-center rounded-md p-1.5 hover:bg-slate-900/5 dark:hover:bg-white/5"
+              className="inline-flex items-center justify-center rounded-md p-1.5 hover:bg-slate-900/5 "
               aria-label="Toggle theme"
             >
               {hour >= 6 && hour < 18 ? (
@@ -123,10 +122,10 @@ export default function Header() {
                 R
               </span>
               <div className="leading-tight">
-                <div className="font-semibold text-slate-900 dark:text-white font-oswald">
-                  Radwan <span className="opacity-60">Ahmed</span>
+                <div className="font-semibold text-white font-oswald">
+                  Radwan <span className="opacity-100">Ahmed</span>
                 </div>
-                <div className="text-[11px] text-slate-500 dark:text-slate-400 font-oswald">
+                <div className="text-[11px] text-slate-400 font-oswald">
                   Frontend • UI Engineering
                 </div>
               </div>
@@ -145,7 +144,7 @@ export default function Header() {
               </ul>
 
               {/* Socials */}
-              <div className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300 font-oswald">
+              <div className="flex items-center gap-1.5 text-slate-300  font-oswald">
                 <IconLink href="https://github.com/radwan503" label="GitHub" accent={ACCENT}>
                   <Github className="h-5 w-5" />
                 </IconLink>
@@ -193,7 +192,7 @@ export default function Header() {
 
             {/* Mobile toggler */}
             <button
-              className="lg:hidden inline-flex items-center justify-center rounded-xl p-2.5 text-slate-700 hover:bg-slate-900/5 dark:text-slate-200 dark:hover:bg-white/5"
+              className="lg:hidden inline-flex items-center justify-center rounded-xl p-2.5  text-slate-200 hover:bg-white/5"
               onClick={() => setOpen((v) => !v)}
               aria-label="Toggle menu"
               aria-expanded={open}
@@ -217,8 +216,8 @@ export default function Header() {
             </ul>
 
             {/* Mobile extras */}
-            <div className="mt-4 grid grid-cols-1 gap-3 border-t border-slate-900/10 pt-4 dark:border-white/10">
-              <div className="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
+            <div className="mt-4 grid grid-cols-1 gap-3 border-t pt-4 border-white/10">
+              <div className="flex items-center gap-3 text-sm text-slate-300">
                 <span className="h-2 w-2 rounded-full animate-pulse font-oswald" style={{ background: ACCENT }} />
                 <span className="font-oswald">Open to roles & projects • Dhaka • {time || "—:—"}</span>
               </div>
@@ -234,7 +233,7 @@ export default function Header() {
                 </a>
                 <a
                   href="/radwanahmed-resume.pdf"
-                  className="flex-1 font-oswald inline-flex items-center justify-center rounded-full px-4 py-2.5 text-sm font-medium text-slate-800 hover:bg-slate-900/5 dark:text-slate-100 dark:hover:bg-white/5"
+                  className="flex-1 font-oswald inline-flex items-center justify-center rounded-full px-4 py-2.5 text-sm font-medium text-slate-100 hover:bg-white/5"
                   style={{ border: "1px solid rgba(255,255,255,.12)" }}
                 >
                   <Download className="h-4 w-4 mr-1.5" />
@@ -242,7 +241,7 @@ export default function Header() {
                 </a>
               </div>
 
-              <div className="flex font-oswald items-center justify-center gap-3 text-slate-600 dark:text-slate-300">
+              <div className="flex font-oswald items-center justify-center gap-3 text-slate-300">
                 <IconLink href="https://github.com/" label="GitHub" className="flex-1 justify-center" accent={ACCENT}>
                   <Github className="h-5 w-5" />
                 </IconLink>
@@ -276,7 +275,7 @@ function NavLink({
       href={href}
       className={[
         "group relative inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold transition",
-        "text-slate-700 hover:text-slate-900 dark:text-slate-200 dark:hover:text-white",
+        " text-slate-200 hover:text-white",
         "hover:-translate-y-[1px]",
       ].join(" ")}
       style={
@@ -316,8 +315,8 @@ function MobileLink({
       href={href}
       className={[
         "block w-full rounded-xl px-3 py-2 text-base transition",
-        "hover:bg-slate-900/5 dark:hover:bg-white/5",
-        active ? "text-white" : "text-slate-800 dark:text-slate-100",
+        "hover:bg-white/5",
+        active ? "text-white" : "text-slate-100",
       ].join(" ")}
       style={active ? { background: `${accent}22`, border: `1px solid ${accent}55` } : {}}
     >
@@ -337,7 +336,7 @@ function IconLink({
     <Link
       href={href}
       aria-label={label}
-      className={`group relative inline-flex items-center rounded-lg p-2 ${className} hover:bg-slate-900/5 dark:hover:bg-white/5`}
+      className={`group relative inline-flex items-center rounded-lg p-2 ${className} hover:bg-white/5`}
     >
       <span className="transition-colors group-hover:text-white" style={{ color: "inherit" }}>
         {children}
