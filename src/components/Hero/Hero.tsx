@@ -101,7 +101,7 @@ export default function Hero() {
                            transition-colors ring-1 ring-white/10"
                 style={{ background: "#030712" }}
               >
-                Get Resume
+                View Resume
                 <Download className="h-4 w-4" />
                 
                 <span className="pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"

@@ -122,10 +122,9 @@ export default function About() {
             <p className="mt-6 text-[15px] sm:text-[16px] leading-relaxed text-slate-300/90">
               I{" "}
               <mark className="rounded px-1 py-0.5" style={{ background: `${ACCENT}26`, color: "#ffe1d6" }}>
-                develop and design
+                build and optimize
               </mark>{" "}
-              {me.aboutDescription}. I bring 6+ years of experience across React, Next.js, TypeScript, and modern UI
-              tooling. I currently serve at <strong>City Bank</strong>, building responsive, secure web applications for
+              scalable web applications with 6+ years of experience in React, Next.js, TypeScript, and modern UI frameworks. I currently serve at <strong>City Bank</strong>, building responsive, secure web applications for
               digital banking.
             </p>
 

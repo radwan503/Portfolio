@@ -20,7 +20,10 @@
       ],
       "topBanner": "/city-bank/cms-customer.png",
       "images": [
-       
+        {
+          "imgUrl": "/city-bank/cms-customer2.png",
+          "title": "Customer Portal For Compaint Creation"
+        }
       ],
       "comparesion": {
         "imgUrl": "/public/jmr/qcoom/change.png"
@@ -119,7 +122,7 @@
       "previewImge": "/city-bank/cms-admin.png",
       "title": [
         "Helpdesk Revamp and",
-        "Complaint Management System"
+        "Complaint Management System-Admin"
       ],
       "subtitle": [
         "helpdesk",
@@ -1662,6 +1665,136 @@
             "Advanced Search and filter",
             "User Authentication and Authorization",
             "Bug Fixes and Maintenance"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "title": "Frontend Development",
+          "subtitle": "Develop modern, responsive, and dynamic user interfaces using reactjs, nextjs, html, css, javascript, scss, bootstrap, antd, context etc.Implement user interface components and features based on design specifications."
+        },
+        {
+          "title": "Next.js Development",
+          "subtitle": "Utilize Next.js for server-side rendering (SSR) and building scalable applications.Optimize applications for performance, SEO, and user experience using Next.js features."
+        },
+        {
+          "title": "State Management",
+          "subtitle": "Manage state using tools like Redux for complex applications.Implement stateful components and ensure efficient data flow."
+        },
+        {
+          "title": "Component-Based Architecture",
+          "subtitle": "Create reusable components for scalable and maintainable code."
+        },
+        {
+          "title": "API Integration",
+          "subtitle": "Integrate with external APIs and third-party services.Fetch and manage data from backend services for dynamic content."
+        },
+        {
+          "title": "Responsive Design",
+          "subtitle": "Ensure cross-browser compatibility and responsiveness across various devices."
+        },
+        {
+          "title": "Collaboration with Backend Developers",
+          "subtitle": "Collaborate with backend developers to integrate frontend and backend logic.Understand and work with RESTful APIs"
+        },
+        {
+          "title": "Performance Optimization",
+          "subtitle": "Identify and address performance bottlenecks in the application.Optimize code for faster load times and improved user experience."
+        },
+        {
+          "title": "Version Control",
+          "subtitle": "Use version control systems (e.g., Git) effectively for collaborative development.Participate in code reviews to ensure code quality."
+        },
+        {
+          "title": "CI/CD Implementation",
+          "subtitle": "Learning CI/CD pipelines for automated testing and deployment.work with deployment tools to ensure smooth releases."
+        },
+        {
+          "title": "Monitoring and Debugging",
+          "subtitle": "Monitor application performance and address issues.Debug and troubleshoot issues reported during testing or production."
+        },
+        {
+          "title": "Code Quality and Testing",
+          "subtitle": "Conduct unit testing and integration testing to ensure code reliability."
+        },
+        {
+          "title": "Agile Development",
+          "subtitle": "Work within an Agile development environment, participating in sprint planning and daily stand-ups.Collaborate with cross-functional teams to deliver features on time."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "featured",
+      "name": "No Syndicate",
+      "image": "",
+      "description": "Online product bidding system where customers can buy products by bid a product.",
+      "demo": "https://nosyndicate.com/",
+      "source": "",
+      "previewImge": "/jmr/no-syndicate/n1.png",
+      "title": [
+        "Develop",
+        "Online Bidding Site"
+      ],
+      "subtitle": [
+        "Customer",
+        "Bidding",
+        "Buy"
+      ],
+      "topBanner": "/jmr/no-syndicate/topbanner.png",
+      "images": [
+        {
+          "imgUrl": "/jmr/no-syndicate/n4.png",
+          "title": "Home page"
+        },
+        {
+          "imgUrl": "/jmr/no-syndicate/n3.png",
+          "title": "Details"
+        },
+        {
+          "imgUrl": "/jmr/no-syndicate/n2.png",
+          "title": "Search page"
+        }
+      ],
+      "comparesion": {
+        "imgUrl": "/public/jmr/qcoom/change.png"
+      },
+      "client": "JMR",
+      "techStack": [
+        "Next JS",
+        "React Query",
+        "React Hook Form",
+        "Tailwind",
+        "JWT",
+        "TypeScript"
+      ],
+      "workido": [
+        {
+          "title": "Functionality & Features",
+          "subtitle": [
+            "Category-based listings of items for bidding/auction: The “Running Bidding” categories suggest the site organizes auctions by category (e.g., agriculture, government stock, export/import).",
+            "“Sell your product” / “Purchase wish product” options  from the navigation text (“drop your price”, “sell your product”, “Purchase Wish product”) indicate both seller and buyer workflows.",
+            "User account functionality (“Account” link) for logging in/registering",
+            "Recent additions and top winners: ability to highlight recent auctions and winners",
+            "Probably bidding process: users can place bids (“drop your price” suggests that mechanism)",
+            "User registration/login",
+            "Auction listing creation/editing",
+            "Bid placing interface",
+            "“Buy now” or instant purchase",
+            "Winner selection / bid closing logic",
+            "Payment/invoice generation",
+            "Recent & Top Winner showcases",
+            "Analytics/dashboard for users"
+          ]
+        },
+        {
+          "title": "Main Navigation",
+          "subtitle": [
+            "Home (“SELL / BID/BUY / Services / Resources” menu)",
+            "Sell” – presumably a section or page where sellers can list items.",
+            "Bid/Buy” – a section where buyers can place bids or buy listed items",
+            "Services” – a menu item; likely describes value-added services",
+            "Resources” – menu item; likely includes support, documentation, FAQs, etc"
           ]
         }
       ],
@@ -3411,6 +3544,7 @@
   ],
   "Others": [
     {
+      "id": 1,
       "type": "featured",
       "name": "Forum",
       "image": "",
@@ -3422,6 +3556,7 @@
       "tools3": "JavaScript"
     },
     {
+      "id": 2,
       "type": "featured",
       "name": "Education",
       "image": "../image/client1.png",
@@ -3433,6 +3568,7 @@
       "tools3": "Bootstrap"
     },
     {
+      "id": 3,
       "type": "featured",
       "name": "Course",
       "image": "",
@@ -3444,6 +3580,7 @@
       "tools3": "JavaScript"
     },
     {
+      "id": 4,
       "type": "featured",
       "name": "Realestate",
       "image": "",
@@ -3455,6 +3592,7 @@
       "tools3": "JavaScript"
     },
     {
+      "id": 5,
       "type": "featured",
       "name": "Quizfy",
       "image": "",
@@ -3466,6 +3604,7 @@
       "tools3": "JavaScript"
     },
     {
+      "id": 6,
       "type": "featured",
       "name": "Fouesquare",
       "image": "",
@@ -3477,6 +3616,7 @@
       "tools3": "JavaScript"
     },
     {
+      "id": 7,
       "type": "featured",
       "name": "Jobs Finder",
       "image": "",
@@ -3488,6 +3628,7 @@
       "tools3": "JavaScript"
     },
     {
+      "id": 8,
       "type": "featured",
       "name": "Business",
       "image": "",
@@ -3499,6 +3640,7 @@
       "tools3": "slick Slider"
     },
     {
+      "id": 9,
       "type": "featured",
       "name": "Institute",
       "image": "",
@@ -3510,6 +3652,7 @@
       "tools3": "JavaScript"
     },
     {
+      "id": 10,
       "type": "featured",
       "name": "Microsodt-Clone",
       "image": "",
@@ -3521,6 +3664,7 @@
       "tools3": "JavaScript"
     },
     {
+      "id": 11,
       "type": "featured",
       "name": "Techno",
       "image": "",
@@ -3532,6 +3676,7 @@
       "tools3": "JavaScript"
     },
     {
+      "id": 12,
       "type": "featured",
       "name": "Admin-React",
       "image": "",
@@ -3543,6 +3688,7 @@
       "tools3": "React"
     },
     {
+      "id": 13,
       "type": "featured",
       "name": "Transformerai",
       "image": "",
@@ -3554,6 +3700,7 @@
       "tools3": "React"
     },
     {
+      "id": 14,
       "type": "featured",
       "name": "Delivery Native App",
       "image": "",
@@ -3565,6 +3712,7 @@
       "tools3": "React"
     },
     {
+      "id": 15,
       "type": "featured",
       "name": "Business Landing",
       "image": "",
