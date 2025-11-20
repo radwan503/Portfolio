@@ -280,7 +280,7 @@ function NavLink({
       ].join(" ")}
       style={
         active
-          ? { background: `${accent}17`, border: `1px solid ${accent}33` }
+          ? { color: `#ff8a5b` }
           : { }
       }
     >
