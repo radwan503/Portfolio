@@ -51,11 +51,11 @@ export default function Service() {
       <section id="services" className="relative isolate bg-[#0b1018] text-slate-100">
         {/* soft bg */}
         <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_-10%,#111a28_0%,#0b1018_55%,#090e16_100%)]" />
-          <div className="absolute inset-0 opacity-[0.04] [background-image:radial-gradient(rgba(255,255,255,0.7)_1px,transparent_1px)] [background-size:14px_14px]" />
+          <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_-10%,#111a28_0%,#080d14_50%,#070b11_100%)]" />
+          <div className="absolute inset-0 opacity-[0.05] [background-image:linear-gradient(rgba(255,255,255,.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.08)_1px,transparent_1px)] [background-size:42px_42px]" />
         </div>
 
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-10">
           {/* Header */}
           <div className="text-left">
             <span
@@ -129,14 +129,14 @@ function ServiceCard({
 }) {
   return (
     <article
-      className="group relative flex h-full min-h-[220px] flex-col justify-between overflow-hidden rounded-2xl
+      className="group relative flex h-full min-h-[220px] flex-col justify-between overflow-hidden rounded-none
                  border border-white/10 bg-white/5 p-5 ring-1 ring-white/10 transition-all duration-300
                  hover:bg-white/[0.08] hover:shadow-[0_12px_40px_-18px_rgba(0,0,0,.7)]"
       style={{ animation: `float-lift 9s ease-in-out ${index * 120}ms infinite` }}
     >
       {/* Glow edge on hover */}
       <span
-        className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        className="pointer-events-none absolute inset-0 rounded-none opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{
           boxShadow: `inset 0 0 0 1px ${ACCENT}33, 0 0 40px -10px ${ACCENT}66`,
         }}
@@ -185,7 +185,7 @@ function ServiceCard({
 function RoleCard({ role, index }: { role: Role; index: number }) {
   return (
     <article
-      className="group relative flex h-full min-h-[200px] flex-col justify-between overflow-hidden rounded-2xl
+      className="group relative flex h-full min-h-[200px] flex-col justify-between overflow-hidden rounded-none
                  border border-white/10 bg-white/5 p-4 ring-1 ring-white/10 transition-all duration-300
                  hover:bg-white/[0.08] hover:shadow-[0_12px_40px_-18px_rgba(0,0,0,.7)]"
       style={{ animation: `float-lift 10s ease-in-out ${index * 100}ms infinite` }}

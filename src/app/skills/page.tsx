@@ -91,11 +91,12 @@ export default function Skill() {
     <section id="skill" className="relative min-h-[92svh] isolate bg-[#0b1018] text-slate-100">
       {/* soft bg */}
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_-10%,#111a28_0%,#0b1018_55%,#090e16_100%)]" />
-        <div className="absolute inset-0 opacity-[0.04] [background-image:radial-gradient(rgba(255,255,255,0.7)_1px,transparent_1px)] [background-size:14px_14px]" />
+      <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_-10%,#111a28_0%,#080d14_50%,#070b11_100%)]" />
+
+      <div className="absolute inset-0 opacity-[0.05] [background-image:linear-gradient(rgba(255,255,255,.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.08)_1px,transparent_1px)] [background-size:42px_42px]" />
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-10">
         {/* header */}
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
@@ -176,7 +177,7 @@ function SkillCard({ skill }: { skill: SkillItem; index: number }) {
   return (
     <div
       ref={ref}
-      className="group overflow-hidden rounded border border-white/10 bg-white/5 p-3 ring-1 ring-white/10 transition-all hover:-translate-y-0.5 hover:bg-white/[0.07] card-overlay "
+      className="group overflow-hidden rounded-none border border-white/10 bg-white/5 p-3 ring-1 ring-white/10 transition-all hover:-translate-y-0.5 hover:bg-white/[0.07] card-overlay "
       //style={{ boxShadow: "0 10px 30px -18px rgba(0,0,0,.6)" }}
     >
       <div className="flex items-center justify-center gap-2 h-30 ">

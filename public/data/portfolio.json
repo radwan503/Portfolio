@@ -368,8 +368,7 @@
       "source": "",
       "previewImge": "/city-bank/dob.png",
       "title": [
-        "Digital",
-        "Onboarding"
+        "Digital Onboarding"
       ],
       "subtitle": [
         "Digital",
@@ -378,7 +377,10 @@
       ],
       "topBanner": "/city-bank/dob.png",
       "images": [
-       
+        {
+          "imgUrl": "/city-bank/dob1.png",
+          "title": "All Account Landing Page"
+        }
       ],
       "comparesion": {
         "imgUrl": "/city-bank/dob.png"
@@ -484,8 +486,7 @@
       "source": "",
       "previewImge": "/city-bank/agent1.png",
       "title": [
-        "Agent",
-        "Banking"
+        "Agent Banking"
       ],
       "subtitle": [
         "Agent",

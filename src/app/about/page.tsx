@@ -93,14 +93,17 @@ export default function About() {
   const me = info[0];
 
   return (
-    <section id="about" className="relative isolate min-h-[92svh] overflow-hidden bg-[#0b1018] text-slate-100">
+    <section id="about" className="relative isolate min-h-[calc(100svh-106px)] overflow-hidden bg-[#0b1018] text-slate-100">
       {/* background */}
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_-10%,#111a28_0%,#0b1018_50%,#090e16_100%)]" />
-        <div className="absolute inset-0 opacity-[0.04] [background-image:radial-gradient(rgba(255,255,255,0.7)_1px,transparent_1px)] [background-size:14px_14px]" />
+      <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_-10%,#111a28_0%,#080d14_50%,#070b11_100%)]" />
+
+      <div className="absolute inset-0 opacity-[0.05] [background-image:linear-gradient(rgba(255,255,255,.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.08)_1px,transparent_1px)] [background-size:42px_42px]" />
+
+      {/* <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_100%,rgba(0,0,0,0.55),transparent_60%)]" /> */}
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           {/* Content */}
           <div className="lg:col-span-8">
@@ -185,7 +188,7 @@ export default function About() {
 
           {/* Profile card with multi-color animated rings */}
           <aside className="lg:col-span-4">
-            <div className="lg:sticky lg:top-24">
+            <div className="lg:sticky lg:top-32 mt-3">
               <AnimatedProfile />
             </div>
           </aside>

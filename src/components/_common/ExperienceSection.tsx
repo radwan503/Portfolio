@@ -58,10 +58,10 @@ function ExperienceSection() {
                 {/* gradient border */}
                 <div
                   aria-hidden
-                  className="absolute inset-0 rounded-2xl opacity-60"
+                  className="absolute inset-0 rounded-none opacity-60"
                   //style={{ background: `linear-gradient(135deg, ${ACCENT}66, transparent 40%, transparent 60%, ${ACCENT}44)` }}
                 />
-                <div className="relative z-10 card-overlay rounded-2xl border border-white/10 bg-white/5 p-5 ring-1 ring-white/10 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:bg-white/[0.07]">
+                <div className="relative z-10 card-overlay rounded-none border border-white/10 bg-white/5 p-5 ring-1 ring-white/10 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:bg-white/[0.07]">
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <div className="text-[15px] font-semibold">

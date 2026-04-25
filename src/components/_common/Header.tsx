@@ -64,7 +64,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50">
       {/* Info strip (contentful, brand color) */}
-      <div className=" bg-slate-950">
+      <div className=" bg-slate-950/80 backdrop-blur-sm border-b border-white/10">
+      
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-1.5 flex items-center gap-3 text-xs">
           <span className="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 font-oswald font-semibold"
                 style={{ color: ACCENT, background: `${ACCENT}14`, border: `1px solid ${ACCENT}33` }}>
@@ -98,19 +99,16 @@ export default function Header() {
       <nav
         id="navbarId"
         
-        style={{ borderColor: "rgba(255,255,255,.35)" }}
+    
         aria-label="Primary"
         className={[
-          "transition-all duration-300 will-change-[background-color,backdrop-filter] sticky top-0 z-50",
+          "relative border-b transition-all duration-300",
           scrolled || open
-            ? [
-                "bg-slate-950 ",
-              ].join(" ")
-            : [
-                "bg-transparent",
-              ].join(" "),
+            ? "border-orange-500/5 bg-[#050711]/90 "
+            : "border-orange-500/5 bg-[#050711]/90 backdrop-blur-xl",
         ].join(" ")}
       >
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_65%_50%,rgba(34,211,238,.13),transparent_30%)]" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             {/* Brand */}
@@ -159,7 +157,7 @@ export default function Header() {
               {/* CTAs: strong primary + quiet secondary */}
               <div className="flex items-center gap-2">
                 <a
-                  href="tel:01873843384"
+                  href="/contact"
                   title="01873843384"
                   className="font-oswald group relative inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition will-change-transform hover:-translate-y-0.5"
                   style={{
@@ -179,7 +177,7 @@ export default function Header() {
                   className="group font-oswald relative inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-[#ff8a5b] transition will-change-transform hover:-translate-y-0.5"
                   style={{
                     background: `#030712`,
-                    boxShadow: `0 10px 24px -10px ${ACCENT}a0`,
+                    //boxShadow: `0 10px 24px -10px ${ACCENT}a0`,
                   }}
                 >
                   <span className="inline-flex items-center gap-1 text-[#ff8a5b] font-oswald">

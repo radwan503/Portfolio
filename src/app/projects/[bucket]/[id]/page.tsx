@@ -119,7 +119,7 @@ export default function PreviewPage() {
   }
 
   return (
-    <main className="relative min-h-[92svh] isolate bg-[#0b1018] text-slate-100">
+    <main className="relative min-h-[calc(100svh-106px)] isolate bg-[#0b1018] text-slate-100">
       {/* soft background */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_-10%,#111a28_0%,#0b1018_55%,#090e16_100%)]" />
@@ -127,7 +127,7 @@ export default function PreviewPage() {
       </div>
 
       {/* Header / Hero */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 sm:pt-10">
         <div className="flex items-center justify-between">
           <button
             onClick={() => router.back()}
@@ -253,7 +253,7 @@ export default function PreviewPage() {
       {/* Top banner / hero shot */}
       {project.topBanner && (
         <section className="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
-          <figure className="overflow-hidden rounded border border-white/10 bg-[#0f1622] card-overlay">
+          <figure className="overflow-hidden rounded-none border border-white/10 bg-[#0f1622] card-overlay">
             <Image
               src={project.topBanner}
               alt={project.name || titleLines.join(" ")}
@@ -275,7 +275,7 @@ export default function PreviewPage() {
             {project.workido!.map((w, i) => (
               <article
                 key={i}
-                className="group card-overlay relative overflow-hidden rounded border border-white/10 bg-white/5 p-5 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/[0.07]"
+                className="group card-overlay relative overflow-hidden rounded-nonr border border-white/10 bg-white/5 p-5 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/[0.07]"
               >
                 <div
                   aria-hidden
@@ -303,13 +303,13 @@ export default function PreviewPage() {
           <h3 className="sr-only">Screenshots</h3>
           <div className="grid gap-6">
             {project.images!.map((shot, i) => (
-              <figure key={i} className="rounded card-overlay  bg-[#0f1622] p-3">
+              <figure key={i} className="rounded-none card-overlay  bg-[#0f1622] p-3">
                 {shot.title && (
                   <figcaption className="px-1 pb-2 text-[12px] uppercase tracking-wide text-slate-400">
                     {shot.title}
                   </figcaption>
                 )}
-                <div className="overflow-hidden rounded-xl">
+                <div className="overflow-hidden rounded-none">
                   <Image
                     src={shot.imgUrl}
                     alt={shot.title || `Screenshot ${i + 1}`}
@@ -326,13 +326,13 @@ export default function PreviewPage() {
 
       {/* Roles & Responsibilities */}
       {!!(project.roles?.length) && (
-        <section className="mx-auto mt-12 max-w-7xl px-4 sm:px-6 lg:px-8 pb-20">
+        <section className="mx-auto mt-12 max-w-7xl px-4 sm:px-6 lg:px-8 pb-10">
           <h3 className="text-lg font-semibold tracking-wide text-slate-300">My Role & Responsibility</h3>
           <div className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {project.roles!.map((r, i) => (
               <article
                 key={i}
-                className="group card-overlay relative overflow-hidden rounded border border-white/10 bg-white/5 p-5 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/[0.07]"
+                className="group card-overlay relative overflow-hidden rounded-none border border-white/10 bg-white/5 p-5 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/[0.07]"
               >
                 <span
                   aria-hidden
