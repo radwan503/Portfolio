@@ -154,9 +154,7 @@ export default function Skill() {
 
 /* --- grid --- */
 function SkillGrid({ items }: { items: SkillItem[] }) {
-  const sorted = useMemo(() => {
-    return [...items].sort((a, b) => Number(!!b.image) - Number(!!a.image));
-  }, [items]);
+  const sorted = items;
 
   if (!sorted.length) {
     return <p className="mt-8 text-sm text-slate-400">No data in this tab.</p>;

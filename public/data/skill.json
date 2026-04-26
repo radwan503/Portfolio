@@ -1,11 +1,6 @@
 {
   "Web": [
     {
-      "name": "JAVASCRIPT",
-      "percent": 97,
-      "image": "/icon/js.png"
-    },
-    {
       "name": "REACT",
       "percent": 98,
       "image": "/icon/science.png"
@@ -17,6 +12,11 @@
     {
       "name": "Typescript",
       "percent": 96
+    },
+    {
+      "name": "JAVASCRIPT",
+      "percent": 97,
+      "image": "/icon/js.png"
     },
     {
       "name": "HTML5",
@@ -37,7 +37,7 @@
       "percent": 98
     },
     {
-      "name": "Cypress",
+      "name": "Jest",
       "percent": 95
     },
     {
