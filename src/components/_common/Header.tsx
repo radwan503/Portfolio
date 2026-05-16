@@ -70,7 +70,7 @@ export default function Header() {
           <span className="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 font-oswald font-semibold"
                 style={{ color: ACCENT, background: `${ACCENT}14`, border: `1px solid ${ACCENT}33` }}>
             <span className="h-1.5 w-1.5 rounded-full animate-pulse" style={{ background: ACCENT }} />
-            Open for freelance
+            Open for opportunities
           </span>
           <span className="hidden md:inline text-slate-100 font-oswald">
             Senior Software Engineer — React • Next.js • TypeScript • UI Systems
