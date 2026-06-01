@@ -197,8 +197,8 @@ export default function About() {
         <ExperienceSection/>
 
         <CreatorSection
-          heading="Creator Studio"
-          subheading="Small experiments, UI kits, and concept builds."
+          heading="Side Projects"
+          subheading="Built from curiosity. Refined through obsession"
         />
 
         {/* Stats with count-up */}
